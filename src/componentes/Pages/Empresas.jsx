@@ -164,7 +164,7 @@ function Empresas() {
   if (carregando) return <p>Carregando empresas...</p>;
 
   return (
-    <div className="bg-white rounded w-full min-h-screen p-4 space-y-6">
+    <div className="rounded w-full min-h-screen p-4 space-y-6">
       <div className="flex flex-col sm:flex-row items-center justify-between mb-4 gap-4">
         <div className="flex items-center gap-2">
           <Icon>
@@ -218,7 +218,7 @@ function Empresas() {
         </div>
       )}
 
-      <div className="bg-white p-4 rounded shadow">
+      <div className="p-4">
         {empresas.length === 0 ? (
           <p className="text-gray-500 text-center p-4 flex items-center justify-center gap-3">
             <IconDivs className="text-gray-400">
@@ -233,7 +233,7 @@ function Empresas() {
                 key={empresa.id}
                 className="w-full sm:w-[350px] md:w-[400px] border rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="p-4 h-full flex flex-col justify-between min-h-[150px]">
+                <div className="bg-slate-50 rounded p-4 h-full flex flex-col justify-between min-h-[150px]">
                   <div className="flex items-start gap-4">
                     <HiOutlineBuildingOffice2 className="w-12 h-12 text-blue-600 flex-shrink-0" />
                     <div className="flex-grow space-y-1">

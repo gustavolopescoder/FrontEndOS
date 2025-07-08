@@ -85,7 +85,7 @@ const MenuLateral = ({ usuarioLogado }) => {
         className="hidden sm:flex fixed h-screen flex-col rounded-md bg-white shadow w-64"
       >
         <div id="header" className="border p-3 flex items-center gap-3">
-          <img src="../public/ChamaNaOS.png" className="w-12" alt="Logo" />
+          <img src="./ChamaNaOS.png" className="w-12" alt="Logo" />
           <h1 className="font-bold">ChamaNaOS</h1>
         </div>
         <nav className="p-2 space-y-3 flex flex-col flex-grow">

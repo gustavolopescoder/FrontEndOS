@@ -4,7 +4,8 @@ import { CgNotes } from "react-icons/cg";
 import { CiFilter } from "react-icons/ci";
 import Title from "../styles/Title";
 import Icon from "../styles/IconHeader";
-
+import TitleDivs from "../styles/TitleDivs";
+import CgNotes from "react-icons/cg";
 function Ordens() {
   const navigate = useNavigate();
 
@@ -122,18 +123,18 @@ function Ordens() {
   if (carregando) return <p>Carregando...</p>;
 
   return (
-    <div className="p-4 bg-white rounded shadow max-w-7xl mx-auto">
+    <div className="p-4 max-w-7xl mx-auto">
       <div id="header" className="flex items-center gap-3 font-medium mb-4">
         <Icon>
-          <CgNotes className="text-5xl text-blue-700" />
+          <CgNotes />
         </Icon>
         <Title>Ordens de Serviço</Title>
       </div>
 
-      <div className="flex flex-col gap-4 p-4 border w-full rounded-md shadow-xl">
+      <div className="bg-slate-50 flex flex-col gap-4 p-4 border w-full rounded-md shadow-xl">
         <div className="flex items-center gap-3">
           <CiFilter className="text-3xl text-blue-700" />
-          <h1 className="text-lg font-semibold">Filtros</h1>
+          <TitleDivs className="text-lg font-semibold">Filtros</TitleDivs>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
@@ -180,7 +181,7 @@ function Ordens() {
         </div>
       </div>
 
-      <div className="shadow-xl p-4 mt-4 rounded-md border overflow-x-auto">
+      <div className="bg-slate-50 shadow-xl p-4 mt-4 rounded-md border overflow-x-auto">
         {ordensFiltradas.length === 0 ? (
           <p className="text-gray-500 text-center mt-8">
             Nenhuma ordem de serviço encontrada.

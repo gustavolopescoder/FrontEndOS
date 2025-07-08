@@ -108,7 +108,7 @@ function Login({ onLogin }) {
         </div>
 
         {/* Lado esquerdo com formulário */}
-        <div className="w-2/4 bg-slate-800 rounded-s-xl p-8 flex items-center justify-center relative overflow-hidden">
+        <div className="w-2/4 bg-slate-800 rounded-e-xl p-8 flex items-center justify-center relative overflow-hidden">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={modoCadastro ? "cadastro" : "login"}

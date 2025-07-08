@@ -254,7 +254,7 @@ function Tecnicos({ usuarioLogado }) {
             {tecnicos.map((tecnico) => (
               <li
                 key={tecnico.id}
-                className="w-full sm:w-[350px] md:w-[400px] border rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                className="bg-slate-50 w-full sm:w-[350px] md:w-[400px] border rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="p-4 flex flex-col sm:flex-row items-center sm:items-start gap-4">
                   <div className="flex-shrink-0">

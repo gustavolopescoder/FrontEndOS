@@ -10,7 +10,7 @@ import Title from "../styles/Title";
 import Icon from "../styles/IconHeader";
 import IconDivs from "../styles/IconDivs";
 import { IoIosFlash } from "react-icons/io";
-
+import TitleDivs from "../styles/TitleDivs";
 function Dashboard() {
   const navigate = useNavigate();
   const [ordens, setOrdens] = useState([]);
@@ -56,7 +56,7 @@ function Dashboard() {
     .slice(0, 5);
 
   return (
-    <div className="bg-slate-50 w-full h-full p-2 space-y-6 rounded">
+    <div className="w-full h-full p-2 space-y-6 rounded">
       <div id="header" className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Icon>
@@ -73,12 +73,12 @@ function Dashboard() {
           <IconDivs className="text-red-600">
             <GoAlertFill />
           </IconDivs>
-          <Title>
+          <TitleDivs>
             Mais chamados no mês de{" "}
             {dataAtual.toLocaleDateString("pt-BR", {
               month: "long",
             })}
-          </Title>
+          </TitleDivs>
         </div>
         {ranking.length === 0 ? (
           <p className="text-gray-500">Nenhum chamado registrado este mês.</p>
@@ -109,7 +109,7 @@ function Dashboard() {
           <IconDivs className="text-blue-600">
             <GoClockFill />
           </IconDivs>
-          <Title>Ordens Recentes</Title>
+          <TitleDivs>Ordens Recentes</TitleDivs>
         </div>
 
         {ordensRecentes.length === 0 ? (
@@ -145,7 +145,7 @@ function Dashboard() {
           <IconDivs className="text-blue-600">
             <IoIosFlash />
           </IconDivs>
-          <Title>Ações Rápidas</Title>
+          <TitleDivs>Ações Rápidas</TitleDivs>
         </div>
         <div className="flex flex-col sm:flex-wrap gap-4 mt-4  justify-start items-start">
           <button
