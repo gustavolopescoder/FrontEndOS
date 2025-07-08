@@ -86,7 +86,10 @@ const MenuLateral = ({ usuarioLogado }) => {
       >
         <div id="header" className="border p-3 flex items-center gap-3">
           <img src="./ChamaNaOS.png" className="w-12" alt="Logo" />
-          <h1 className="font-bold">ChamaNaOS</h1>
+          <h1 className="font-semibold">
+            <span className="text-blue-950">Chama</span>Na
+            <span className="text-cyan-400">OS</span>
+          </h1>
         </div>
         <nav className="p-2 space-y-3 flex flex-col flex-grow">
           <h1>Navegação</h1>
