@@ -81,9 +81,10 @@ function Login({ onLogin }) {
   };
 
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-[#F2F6F9] px-4">
-      <div className="flex flex-row w-full max-w-6xl h-[90vh] shadow-lg rounded-3xl overflow-hidden">
-        <div className="md:w-1/2 w-full bg-gradient-to-br from-[#0EB1D2] to-[#045D75] flex flex-col justify-center items-center text-white p-8 text-center space-y-3">
+    <div className="w-full min-h-screen flex items-center justify-center bg-[#F2F6F9] px-4 py-6">
+      <div className="flex flex-col md:flex-row w-full max-w-6xl shadow-lg rounded-3xl overflow-hidden">
+        {/* Lado esquerdo (info) */}
+        <div className="w-full md:w-1/2 bg-gradient-to-br from-[#0EB1D2] to-[#045D75] flex flex-col justify-center items-center text-white p-8 text-center space-y-4">
           <h1 className="text-2xl font-semibold">
             {modoCadastro ? "Já tem uma conta?" : "Não tem uma conta?"}
           </h1>
@@ -94,14 +95,14 @@ function Login({ onLogin }) {
           </p>
           <button
             onClick={trocarModo}
-            className="mt-4 px-6 py-2 rounded-md bg-white text-[#045D75] font-semibold shadow hover:bg-gray-100 transition"
+            className="mt-2 px-6 py-2 rounded-md bg-white text-[#045D75] font-semibold shadow hover:bg-gray-100 transition"
           >
             {modoCadastro ? "Voltar ao Login" : "Cadastre-se"}
           </button>
         </div>
 
-        {/* Formulário animado */}
-        <div className="md:w-1/2 w-full bg-white flex items-center justify-center px-6 py-8">
+        {/* Lado direito (formulário) */}
+        <div className="w-full md:w-1/2 bg-white flex items-center justify-center px-6 py-10">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={modoCadastro ? "cadastro" : "login"}
