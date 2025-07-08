@@ -5,7 +5,7 @@ import { CiFilter } from "react-icons/ci";
 import Title from "../styles/Title";
 import Icon from "../styles/IconHeader";
 import TitleDivs from "../styles/TitleDivs";
-import CgNotes from "react-icons/cg";
+
 function Ordens() {
   const navigate = useNavigate();
 
