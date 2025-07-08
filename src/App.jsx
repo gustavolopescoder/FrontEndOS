@@ -99,7 +99,7 @@ function AppContent() {
   return (
     <>
       <MenuLateral usuarioLogado={user} />
-      <div className="sm:ml-64 h-screen overflow-y-auto p-4 transition-all duration-300 bg-slate-50">
+      <div className="sm:ml-64 h-screen overflow-y-auto p-4 transition-all duration-300 bg-background">
         <AnimatedRoutes
           ordens={ordens}
           empresas={empresas}

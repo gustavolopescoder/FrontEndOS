@@ -12,8 +12,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      national: ["'National Park'", "sans-serif"],
-      grotesk: ["'Space Grotesk'", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
+      lora: ["Lora", "serif"],
     },
   },
   plugins: [],

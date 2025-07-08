@@ -3,7 +3,7 @@ import React from "react";
 export default function Icon({
   children,
   size = 38,
-  className = "text-blue-600",
+  className = "text-slate-900",
 }) {
   return (
     <span

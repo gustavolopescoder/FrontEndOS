@@ -164,7 +164,7 @@ function Empresas() {
   if (carregando) return <p>Carregando empresas...</p>;
 
   return (
-    <div className="bg-slate-50 rounded w-full min-h-screen p-4 space-y-6">
+    <div className="bg-white rounded w-full min-h-screen p-4 space-y-6">
       <div className="flex flex-col sm:flex-row items-center justify-between mb-4 gap-4">
         <div className="flex items-center gap-2">
           <Icon>

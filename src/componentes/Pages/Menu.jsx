@@ -151,7 +151,8 @@ const MenuLateral = ({ usuarioLogado }) => {
               <button
                 onClick={() => {
                   localStorage.removeItem("usuario");
-                  window.location.reload(); // força reload e volta pra tela de login
+                  localStorage.removeItem("token");
+                  navigate("/login", { replace: true }); // Redireciona corretamente para /login
                 }}
                 className="mt-2 text-red-600 hover:underline text-sm"
               >

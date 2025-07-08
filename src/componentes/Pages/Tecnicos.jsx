@@ -179,7 +179,7 @@ function Tecnicos({ usuarioLogado }) {
   if (carregando) return <p>Carregando técnicos...</p>;
 
   return (
-    <div className="bg-slate-50 w-full h-full p-4 space-y-6 rounded">
+    <div className="w-full h-full p-4 space-y-6 rounded">
       {/* Header */}
       <div className="flex items-center justify-between mb-4 gap-4">
         <div className="flex items-center gap-3">
